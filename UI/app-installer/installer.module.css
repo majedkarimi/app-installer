@@ -1,0 +1,54 @@
+.installer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.inner {
+  position: fixed;
+  bottom: 9px;
+  background: #ffffff;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  direction: rtl;
+  height: 45px;
+  border-radius: 13px;
+  padding: 0 16px;
+  align-items: center;
+  border: 2px solid #a1a1a1;
+}
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close img {
+  width: 18px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo span {
+  /* color: #fff; */
+  font-size: 14px;
+}
+.logo img {
+  width: 29px;
+}
+
+.btn {
+  background: #252525;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 29px;
+  font-size: 14px;
+}

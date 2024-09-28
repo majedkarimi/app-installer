@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Poppins:wght@300;400;500;600&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Poppins:wght@300;400;500;600&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bgColor: #000;
+  --textColor: #fff;
+  --bgVisit: #090e14;
+  --circleColor: #5295d2;
+  --dotteColor: #3f6c95;
+  --bgDotte: #0e2031;
+  --itemNumberBg: #191919;
+}
+.dark-mode {
+  --bgColor: #000;
+  --textColor: #fff;
+  --bgVisit: #090e14;
+  --visitText: #5c7792;
+  --circleColor: #5295d2;
+  --dotteColor: #3f6c95;
+  --bgDotte: #0e2031;
+  --itemNumberBg: #191919;
+  --itemNumberText: #fff;
+  --itemBorder: #1a1a1a;
+  --submit: #fff;
+  --exampleBox: #1b1b1b;
+  --exampleShadow: #000;
+  --radioBtnBg: #131313;
+  --inputSearchBg: #191919;
+  --inputSearchColor: #eee;
+}
+.green-mode {
+  --bgColor: #161616;
+  --textColor: #fff;
+  --bgVisit: #090e14;
+  --visitText: #5c7792;
+  --circleColor: #5295d2;
+  --dotteColor: #3f6c95;
+  --bgDotte: #0e2031;
+  --itemNumberBg: hsl(153deg 59.5% 70% / 9%);
+  --itemNumberText: hsl(153.1deg 60.2% 52.7% / 1);
+  --itemBorder: hsl(0deg 0% 20.4% / 1);
+  --itemBg: #1c1c1c;
+  --itemTitleClolor: #f4fffa;
+  --itemMiniClolor: rgb(117, 113, 94);
+  --submit: #fff;
+  --exampleBox: #1b1b1b;
+  --exampleShadow: #000;
+  --radioBtnBg: #131313;
+  --inputSearchBg: #191919;
+  --inputSearchColor: #eee;
+}
+.light-mode {
+  --bgColor: #fff;
+  --textColor: #000;
+  --bgVisit: #eef7fe;
+  --visitText: #4a98dc;
+  --circleColor: #5295d2;
+  --dotteColor: #3f6c95;
+  --bgDotte: #0e2031;
+  --itemNumberBg: #f6f6f6;
+  --itemNumberText: #4f4f4f;
+  --itemBorder: #cbcbcb;
+  --submit: #fff;
+  --exampleBox: #fff;
+  --exampleShadow: #d3d3d3;
+  --radioBtn: #fff;
+  --inputSearchBg: #fff;
+  --inputSearchColor: #555;
+}
+body {
+  background: var(--bgColor);
+  color: var(--textColor);
+  font-family: "Vazirmatn", sans-serif;
+  transition: all 200ms ease-out;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: auto;
+}
+img {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+  supported by Chrome, Opera and Firefox */
+  max-width: 100%;
+}
+p,
+a,
+button,
+span,
+label,
+input {
+  font-family: "Vazirmatn", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+button,
+a {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+/*---------------------------------------------------------------
+  # Layout
+-----------------------------------------------------------------*/
+.d-none {
+  display: none !important;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.no-scroll {
+  overflow-y: hidden;
+}
+.mobile {
+  display: flex !important;
+}
+.desktop {
+  display: none !important;
+}
+.disable {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: flex !important;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black-100);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: var(--active-input);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}

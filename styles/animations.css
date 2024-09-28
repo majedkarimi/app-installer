@@ -1,0 +1,33 @@
+.slide-up-animate {
+  animation: slide-up 500ms forwards;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(72vh);
+    visibility: hidden;
+    box-shadow: unset;
+  }
+  50% {
+    transform: translateY(-4vh);
+    visibility: visible;
+    box-shadow: unset;
+  }
+  100% {
+    transform: translateY(0vh);
+    visibility: visible;
+  }
+}
+.slide-up-page-animate {
+  animation: slide-up-page 300ms forwards;
+}
+@keyframes slide-up-page {
+  0% {
+    transform: translateY(10vh);
+    visibility: hidden;
+    box-shadow: unset;
+  }
+  100% {
+    transform: translateY(0vh);
+    visibility: visible;
+  }
+}
